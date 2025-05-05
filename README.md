@@ -1,2 +1,10 @@
 # Math-RoB
 测试大模型推理鲁棒性的数据集
+math500   来自于huggingface   HuggingFaceH4/MATH-500
+newmath500 三个问题三三组合，要求只回答第一个/只回答第二个、只回答第三个
+selected_math_define_operation_真实 修改math500的数据，得到新的准确的问题。 
+selected_math_define_operation   在问题前面加上定义操作符的prompt
+selected_math_define_operation_1shot 在selected_math_define_operation的基础上添加1-shot的prompt
+selected_math_define_operation_对照实验 在原问题的基础上删除或者强行改变进行数学计算的数字 为了验证模型在输入与训练样本不一致的情况下指令遵循情况
+selected_math_define_operation_替换数字  把真实问题的某些数字用希腊字母进行替换，然后在前面加上替换回去的prompt
+selected_math_delete_crucial_data 删除math500的数据集中一些关键数，导致问题本不可解。 
