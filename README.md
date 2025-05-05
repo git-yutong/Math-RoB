@@ -2,7 +2,7 @@
 测试大模型推理鲁棒性的数据集
 math500   来自于huggingface   HuggingFaceH4/MATH-500
 
-newmath500 三个问题三三组合，要求只回答第一个/只回答第二个、只回答第三个
+newmath500 三个问题三三组合，要求只回答第一个/只回答第二个/只回答第三个
 
 selected_math_define_operation_真实 修改math500的数据，得到新的准确的问题。 
 
